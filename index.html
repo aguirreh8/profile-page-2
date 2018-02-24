@@ -44,25 +44,31 @@
 							<a href="https://github.com/aguirreh8/hangman-node" target="_blank" class="projects__description">Hangman Node - A program written in javascript, run on node.js. A game of hagman that uses constructor modules to keep track of user's progress. Uses inquirer npm</a>
 						</div>
 					</div>
+					<div class="projects__holder">
+						<img src="assets/img/bamazon.JPG" class="projects__img" />
+						<div class="projects--overlay">
+							<a href="https://github.com/aguirreh8/Bamazon" target="_blank" class="projects__description">Bamazon.js - A mock replica of an online retail application written in node. Includes MySQL database backup.</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="my-content__bottom--blue">
 			<div class="my-content__holder-bottom">
 				<h2 class="contact-title">Contact Me</h2>
-				<form>
+				<form action="mailto:aguirreh8@gmail.com" method="post" enctype="text/plain">
 					<label for="nameInput">Name:</label>
-					<input type="text" id="nameInput" name="nameInput" placeholder="Name here"/>
+					<input type="text" id="nameInput" name="name" placeholder="Name here"/>
 					<br />
-					<label for="emailInput">Email:</label> 
-					<input type="text" id="emailInput" name="emailInput" placeholder="Email" />
+					<label for="subjectInput">Subject:</label> 
+					<input type="text" id="subjectInput" name="subject" placeholder="Subject" />
 					<br />
 					<label>Message:</label>
 					<br />
 					<br />
-					<textarea id="messageInput" rows="8" cols="50" placeholder="Message"></textarea>
+					<textarea id="messageInput" rows="8" cols="50" placeholder="Message" name="comment"></textarea>
 					<br />
-					<input id="sendMail" class="send-mail" type="submit" name="sendMail" />
+					<input id="sendMail" class="send-mail" type="submit" name="sendMail" value="Send" />
 				</form>
 			</div>
 		</div>

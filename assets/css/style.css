@@ -105,6 +105,7 @@ h1 {
 .projects__holder {
 	float: left;
 	margin: 10px;
+	box-shadow: 0px 2px 23px 0px rgba(0,0,0,0.75);
 }
 
 

@@ -76,6 +76,10 @@ h1 {
 	height: 100px;
 }
 
+.technologies {
+	text-align: center;
+}
+
 .my-content__middle--white {
 	padding: 20px;
 	background-color: rgba(255, 255, 255, 0.9);
@@ -119,6 +123,7 @@ h1 {
 
 .projects__description {
   color: white;
+  width: 90%;
   font-size: 18px;
   position: absolute;
   top: 50%;
@@ -132,6 +137,26 @@ h1 {
 
 .projects__holder:hover .projects--overlay {
   opacity: .98;
+}
+
+.projects__link--site {
+	color: white;
+  	font-size: 18px;
+  	background-color: green;
+  	padding: 5px;
+  	margin: 5px;
+  	border-radius: 10px;
+ 	text-decoration: none; 	
+}
+
+.projects__link--github {
+	color: white;
+  	font-size: 18px;
+  	background-color: red;
+  	padding: 5px;
+  	margin: 5px;
+  	border-radius: 10px;
+ 	text-decoration: none; 	
 }
 
 .my-content__bottom--blue {
@@ -149,6 +174,7 @@ h1 {
 	font-family: "Pontano Sans", "Helvetica", 'sans-serif';
 	font-size: 15px;
 	text-shadow: 4px 2px 5px rgba(150, 150, 150, 0.71);
+	overflow: auto;
 }
 
 .contact-title {
@@ -157,6 +183,22 @@ h1 {
 	color: white;
 	text-shadow: 4px 2px 5px rgba(150, 150, 150, 0.71);
 	padding: 20px 0px 20px 0px;
+}
+
+.contact-description {
+	font-size: 30px;
+	padding: 20px;
+}
+
+.email-form {
+	width: 50%;
+	float: left;
+	border-right: solid 5px gray;
+}
+
+.ext-links {
+	width: 30%;
+	float: right;
 }
 
 form {
@@ -184,12 +226,13 @@ textarea {
 }
 
 .send-mail {
-	width: 20%;
-	height: 50px;
+	width: 80%;
+	height: 80px;
 	padding: 10px;
 	color: white;
 	background-color: #05AEF9FF;
 	font-weight: bold;
+	font-size: 25px;
 	border-radius: 5px;
 	border: none;
 	cursor: pointer;
@@ -208,22 +251,6 @@ footer {
 	color: white;
 	font-size: 15px;
 	overflow: auto;
-}
-
-aside {
-	width: 270px;
-	height: 150px;
-	float: right;
-	margin-left: 20px;
-	font-size: 18px;
-	font-family: "Pontano Sans", "Helvetica", 'sans-serif';
-	background-color: rgba(0, 0, 0, 1.);
-	text-align: center;
-	padding: 5px;
-	border: solid;
-	color: white;
-	border-color: white;
-	border-style: groove;
 }
 
 @media screen and (max-width: 1680px) {
@@ -249,9 +276,17 @@ aside {
 }
 
 @media screen and (max-width: 1609px) {
+	.projects__description {
+		font-size: 15px;
+	}
+
+	.projects__link {
+		font-size: 15px;
+	}
+
 	.projects__img {
-		width: 410px;
-		height: 250px;
+		width: 280px;
+		height: 220px;
 	}	
 }
 
@@ -317,11 +352,18 @@ aside {
 		height: 200px;
 	}
 
-	aside {
+	.email-form {
 		float: none;
-		margin: 0 auto;
-		margin-bottom: : 10px;
+		width: 100%;
+		border: 0;
 	}
+
+	.ext-links {
+		float: none;
+		width: 80%;
+		margin: 0 auto;
+	}
+
 }
 
 @media screen and (max-width: 414px) {

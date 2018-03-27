@@ -291,6 +291,14 @@ footer {
 	}	
 }
 
+@media screen and (max-width: 1515px) {
+	.projects__img {
+		width: 320px;
+		height: 220px;
+	}	
+}
+
+
 @media screen and (max-width: 966px) {
 	.profile-about {
 		width: 40%;
